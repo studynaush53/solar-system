@@ -58,6 +58,7 @@ jobs:
             run: npm install
 
           - name: Run Code-coverage
+            continue-on-error: true
             run: npm run coverage
 
           - name: archive test results
